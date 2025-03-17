@@ -7,6 +7,7 @@ public class Principal {
         meuFilme.setNome("O Poderoso Chefão");
         meuFilme.setAnoLancamento(1970);
         meuFilme.setDuracaoEmMinutos(180);
+        meuFilme.setDiretor("Arrascaeta");
 
         meuFilme.exibeFichaTecnica();
     }
