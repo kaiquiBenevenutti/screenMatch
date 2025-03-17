@@ -1,6 +1,6 @@
 package models;
 
-public class Serie extends Titulos{
+public class Serie extends Titulos implements Classificacao{
     private int temporadas;
     private boolean ativa;
     private int episodiosPorTemporada;
@@ -41,4 +41,10 @@ public class Serie extends Titulos{
     @Override
     public int getDuracaoEmMinutos() {
         return temporadas * episodiosPorTemporada * minutosPorEpisodio;
-    }}
+    }
+
+    @Override
+    public int GetAvaliacao() {
+        return (int) getAvaliacao() / 2;
+    }
+}

@@ -1,4 +1,6 @@
+import models.Classificacao;
 import models.Filme;
+import models.FiltraClassificacao;
 import models.Serie;
 
 public class Principal {
@@ -26,5 +28,9 @@ public class Principal {
         var anoLancamento = theBoys.getAnoLancamento();
         var tempo = theBoys.getDuracaoEmMinutos();
         System.out.println(nome + " uma serie que lançou em " + anoLancamento + " que possui a incrivel nota de " + theBoys.getAvaliacao() + " e demora " + tempo +" minutos para maratonar.");
+
+        FiltraClassificacao f = new FiltraClassificacao();
+
+        f.Filtra(theBoys);
     }
 }
