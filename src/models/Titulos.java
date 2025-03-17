@@ -8,24 +8,51 @@ public class Titulos {
     private int totalAvaliacoes;
     private int duracaoEmMinutos;
 
-    public void setNome(String nome){
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
         this.nome = nome;
     }
 
-    public void setAnoLancamento(int ano){
-        this.anoLancamento = ano;
+    public int getAnoLancamento() {
+        return anoLancamento;
     }
 
-    public void setAvaliacao(double avaliacao) {
-        this.avaliacao = avaliacao;
-        this.totalAvaliacoes++;
+    public void setAnoLancamento(int anoLancamento) {
+        this.anoLancamento = anoLancamento;
     }
 
     public boolean isIncluiNoPlano() {
         return incluiNoPlano;
     }
 
-    public void setDuracaoEmMinutos(int duracaoEmMinutos){
+    public void setIncluiNoPlano(boolean incluiNoPlano) {
+        this.incluiNoPlano = incluiNoPlano;
+    }
+
+    public int getTotalAvaliacoes() {
+        return totalAvaliacoes;
+    }
+
+    public void setTotalAvaliacoes(int totalAvaliacoes) {
+        this.totalAvaliacoes = totalAvaliacoes;
+    }
+
+    public double getAvaliacao() {
+        return avaliacao;
+    }
+
+    public void setAvaliacao(double avaliacao) {
+        this.avaliacao = avaliacao;
+    }
+
+    public int getDuracaoEmMinutos() {
+        return duracaoEmMinutos;
+    }
+
+    public void setDuracaoEmMinutos(int duracaoEmMinutos) {
         this.duracaoEmMinutos = duracaoEmMinutos;
     }
 
