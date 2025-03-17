@@ -5,4 +5,9 @@ public class Filme {
     double avaliacao;
     int totalAvaliacoes;
     int duracaoEmMinutos;
+
+    void exibeFichaTecnica(){
+        System.out.println("Nome do filme: " + nome);
+        System.out.println("Tempo do filme: " + duracaoEmMinutos + " minutos");
+    }
 }
