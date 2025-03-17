@@ -1,4 +1,4 @@
-﻿public class Filme {
+public class Filme {
     String nome;
     int anoLancamento;
     boolean incluiNoPlano;
