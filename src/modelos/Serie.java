@@ -1,10 +1,14 @@
-package models;
+package modelos;
 
-public class Serie extends Titulos implements Classificacao{
+public class Serie extends Titulo {
     private int temporadas;
     private boolean ativa;
     private int episodiosPorTemporada;
     private int minutosPorEpisodio;
+
+    public Serie(String nome, int anoDeLancamento) {
+        super(nome, anoDeLancamento);
+    }
 
     public int getTemporadas() {
         return temporadas;
@@ -44,7 +48,7 @@ public class Serie extends Titulos implements Classificacao{
     }
 
     @Override
-    public int GetAvaliacao() {
-        return (int) getAvaliacao() / 2;
+    public String toString() {
+        return "Série: " + this.getNome() + "(" + this.getAnoDeLancamento() + ")";
     }
 }
